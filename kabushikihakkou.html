@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>仕訳　株式発行</title>
+  </head>
+  <style media="screen">
+  body{
+     background-image: url(austo.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+    h1{
+      text-align: center;
+      background-color: #cce5ff;
+    }
+    .menu{
+      position: fixed;
+      left: 0;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 0px 10px 0px 10px;
+      background-color: #d1d1ff;
+      border: solid 5px #7f7fff;
+    }
+    .hoka,.nigyoume{
+      line-height: 0;
+    }
+    .hoka{
+      text-align: center;
+    }
+    .nigyoume{
+      text-align: center;
+      text-indent: 1.25em;
+    }
+    table{
+      border-collapse: collapse;
+      border: 1px black solid;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      font-size: 20px
+    }
+    caption{
+      background-color: #ffffff;
+      border: solid 1px black;
+    }
+    table th{
+      background:#eeeeee;
+      padding: 10px;
+    }
+    table td{
+      background-color: #ffffff;
+    }
+    table th,table td{
+      border: solid 1px black;
+    }
+    .leftline{
+      border-left: 3px double;
+      padding: 10px;
+    }
+    .touza{
+      padding: 0px 10px 60px;
+    }
+    .sonota{
+      padding: 10px;
+    }
+    #shihon{
+      text-align: center;
+      background-color: #ffffff;
+      margin-left: auto;
+      margin-right: auto;
+      width: 340px;
+      height: 90px;
+      padding-top: 0px;
+    }
+  </style>
+  <body>
+    <h1>1.株式発行</h1>
+    <div class="menu">
+    <p><font size="5">仕訳一覧</font size></p>
+    <ol start="0">
+      <li><a href="file:///C:/Users/user/Documents/NissyoBoki/Boki2kyu.html">トップ</a></li>
+      <li><a href="file:///C:/Users/user/Documents/NissyoBoki/Siwake/Kabushikihakkou.html">株式発行</a></li>
+      <li><a href="file:///C:/Users/user/Documents/NissyoBoki/Siwake/Zoushi.html">増資</a></li>
+    </ol>
+  </div>
+    <p><div class="hoka">取引：会社の設立にあたって株式100株を1株あたり10円で発行。</div></P>
+    <p><div class="nigyoume">全株式の払い込みを受け、払込金額は当座預金とした。</div></p>
+    <table>
+      <caption>原則処理の場合</caption>
+      <tr>
+        <th>借方科目</th>
+        <th>金額</th>
+        <th class="leftline">貸方科目</th>
+        <th>金額</th>
+      </tr>
+      <tr>
+        <td class="sonota">当座預金</td>
+        <td class="sonota">1,000</td>
+        <td class="leftline">資本金</td>
+        <td class="sonota">1,000</td>
+      </tr>
+      </table>
+      <table>
+        <caption>容認処理（会社法）の場合</caption>
+        <tr>
+          <th>借方科目</th>
+          <th>金額</th>
+          <th class="leftline">貸方科目</th>
+          <th>金額</th>
+        </tr>
+        <tr>
+          <td class="touza" rowspan="2">当座預金</td>
+          <td class="touza" rowspan="2">1,000</td>
+          <td class="leftline">資本金</td>
+          <td class="sonota">500</td>
+        </tr>
+        <tr>
+          <td class="leftline">資本準備金</td>
+          <td class="sonota">500</td>
+        </tr>
+        </table>
+        <div id="shihon">
+          <p>会社法での計算方法</p>
+        <ul>
+          <li>資本金：＠10円×100株×1/2=500円</li>
+          <li>資本準備金：1,000円-500円=500円</li>
+        </ul>
+        </div>
+  </body>
+</html>
+
