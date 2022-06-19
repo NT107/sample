@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>仕訳　増資</title>
+  </head>
+  <style media="screen">
+  body{
+     background-image: url(huzisan.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+    h1{
+      text-align: center;
+      background-color: #cce5ff;
+    }
+    .bunsyou{
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .menu{
+      position: fixed;
+      left: 0;
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 0px 10px 0px 10px;
+      background-color: #d1d1ff;
+      border: solid 5px #7f7fff;
+    }
+    table{
+      border-collapse: collapse;
+      border: 1px black solid;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      font-size: 20px
+    }
+    caption{
+      background-color: #ffffff;
+      border: solid 1px black;
+    }
+    table th{
+      background: #eeeeee;
+      padding: 10px;
+    }
+    table td{
+      background-color: #ffffff;
+    }
+    table th,table td{
+      border: solid 1px black;
+    }
+    .leftline{
+      border-left: 3px double;
+      padding: 10px;
+    }
+    .kabushikimoushi{
+      padding: 10px 10px 60px;
+    }
+    .touza{
+      padding: 10px;
+    }
+    .sonota{
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <h1>2.増資</h1>
+    <div class="menu">
+    <p><font size="5">仕訳一覧</font size></p>
+    <ol start="0">
+      <li><a href="file:///C:/Users/user/Documents/NissyoBoki/Boki2kyu.html">トップ</a></li>
+      <li><a href="file:///C:/Users/user/Documents/NissyoBoki/Siwake/Kabushikihakkou.html">株式発行</a></li>
+      <li><a href="file:///C:/Users/user/Documents/NissyoBoki/Siwake/Zoushi.html">増資</a></li>
+    </ol>
+  </div>
+    <div class="bunsyou">
+      <p>取引：増資の為、株式20株について1株あたり10円で株主募集したところ、申込期日までに全株式が申し込まれ、払込金額の全額を申込証拠金として受け入れ、別段預金とした。</p>
+      </div>
+    <table>
+      <caption>受取の場合</caption>
+      <tr>
+        <th>借方科目</th>
+        <th>金額</th>
+        <th class="leftline">貸方科目</th>
+        <th>金額</th>
+      </tr>
+      <tr>
+        <td class="sonota">別段預金</td>
+        <td class="sonota">200</td>
+        <td class="leftline">株式申込証拠金</td>
+        <td class="sonota">200</td>
+      </tr>
+      </table>
+      <div class="bunsyou">
+      <p>取引：払込期日となり、申込証拠金200円を増資の払込金額に充当し、同時に別段預金を当座預金とした。なお、払込金額のうち、会社法で認められている最低額を資本金とすることとした。</p>
+      </div>
+      <table>
+        <caption>払込の場合</caption>
+        <tr>
+          <th>借方科目</th>
+          <th>金額</th>
+          <th class="leftline">貸方科目</th>
+          <th>金額</th>
+        </tr>
+        <tr>
+          <td class="kabushikimoushi" rowspan="2">株式申込証拠金</td>
+          <td class="kabushikimoushi" rowspan="2">200</td>
+          <td class="leftline">資本金</td>
+          <td class="sonota">100</td>
+        </tr>
+        <tr>
+          <td class="leftline">資本準備金</td>
+          <td class="sonota">100</td>
+        </tr>
+        <tr>
+          <td class="touza">当座預金</td>
+          <td class="touza">200</td>
+          <td class="leftline">別段預金</td>
+          <td class="sonota">200</td>
+        </tr>
+        </table>
+  </body>
+</html>
+
